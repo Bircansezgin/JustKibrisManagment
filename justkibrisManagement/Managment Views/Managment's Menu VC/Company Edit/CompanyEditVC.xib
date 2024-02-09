@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyEditVC" customModule="justkibrisManagement" customModuleProvider="target">
+            <connections>
+                <outlet property="exitImage" destination="lsU-U6-IgO" id="ZQA-Zu-aHj"/>
+                <outlet property="loading" destination="I0G-xS-pPc" id="UNY-ck-Fsc"/>
+                <outlet property="segmentControll" destination="pdZ-Rd-3VW" id="KnT-46-c0P"/>
+                <outlet property="statusLabel" destination="NsA-Xk-9Wd" id="1No-vt-1Rb"/>
+                <outlet property="tableView" destination="E2K-Rr-yns" id="B9D-CL-4ys"/>
+                <outlet property="userView" destination="XHj-n3-tei" id="AOa-co-q6X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E2K-Rr-yns">
+                    <rect key="frame" x="0.0" y="120" width="393" height="707"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="707" id="9AT-ce-3jk"/>
+                    </constraints>
+                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlikler Bulunamadı. Lütfen Bekleyiniz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NsA-Xk-9Wd">
+                        <rect key="frame" x="0.0" y="1608.0000000000002" width="393" height="70"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-xS-pPc">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" red="0.4463018775" green="0.27315044399999999" blue="0.90616661310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHj-n3-tei">
+                    <rect key="frame" x="16" y="26" width="361" height="47"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.right.and.arrow.up.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsU-U6-IgO">
+                            <rect key="frame" x="305" y="0.99999999999999645" width="48" height="45.333333333333329"/>
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="fwc-tp-LLp"/>
+                                <constraint firstAttribute="height" constant="47" id="zRP-vj-9sv"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlik Yönetim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlr-dL-C9Q">
+                            <rect key="frame" x="8" y="13" width="289" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="iCE-oR-gHx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="0Rq-b1-SKW"/>
+                        <constraint firstItem="hlr-dL-C9Q" firstAttribute="top" secondItem="XHj-n3-tei" secondAttribute="top" constant="13" id="Kuz-PJ-vdm"/>
+                        <constraint firstItem="lsU-U6-IgO" firstAttribute="top" secondItem="XHj-n3-tei" secondAttribute="top" id="OYI-Ke-3RH"/>
+                        <constraint firstItem="lsU-U6-IgO" firstAttribute="leading" secondItem="hlr-dL-C9Q" secondAttribute="trailing" constant="8" symbolic="YES" id="YCy-Ct-Gaj"/>
+                        <constraint firstItem="hlr-dL-C9Q" firstAttribute="leading" secondItem="XHj-n3-tei" secondAttribute="leading" constant="8" id="dBP-fN-4B9"/>
+                        <constraint firstAttribute="trailing" secondItem="lsU-U6-IgO" secondAttribute="trailing" constant="8" id="oBw-Cv-T7w"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pdZ-Rd-3VW">
+                    <rect key="frame" x="8" y="81" width="377" height="32"/>
+                    <segments>
+                        <segment title="Yayında Olan"/>
+                        <segment title="Yayında Olmayan"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="I0G-xS-pPc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="86B-qD-d3q"/>
+                <constraint firstItem="I0G-xS-pPc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FQ3-3r-Z5e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XHj-n3-tei" secondAttribute="trailing" constant="16" id="Ix5-Px-NWN"/>
+                <constraint firstItem="E2K-Rr-yns" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KLs-6c-YwU"/>
+                <constraint firstItem="E2K-Rr-yns" firstAttribute="top" secondItem="pdZ-Rd-3VW" secondAttribute="bottom" constant="8" symbolic="YES" id="YD6-Sd-mtX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pdZ-Rd-3VW" secondAttribute="trailing" constant="8" id="aUb-xT-6tc"/>
+                <constraint firstItem="pdZ-Rd-3VW" firstAttribute="top" secondItem="XHj-n3-tei" secondAttribute="bottom" constant="8" symbolic="YES" id="dbu-s8-Hcp"/>
+                <constraint firstItem="XHj-n3-tei" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="lia-vS-wmE"/>
+                <constraint firstItem="pdZ-Rd-3VW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="p3y-hd-ITj"/>
+                <constraint firstItem="XHj-n3-tei" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="p50-M6-6Nd"/>
+                <constraint firstItem="E2K-Rr-yns" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="piN-ST-XUA"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.down.right.and.arrow.up.left" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
