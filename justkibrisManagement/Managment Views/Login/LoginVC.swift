@@ -25,6 +25,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupButton()
+        setupCloseKeyBoard()
     }
     
     
@@ -110,6 +111,18 @@ extension LoginVC{
         adminManagementVC.modalPresentationStyle = .fullScreen // veya .pageSheet
         adminManagementVC.modalTransitionStyle = .coverVertical
         present(adminManagementVC, animated: true, completion: nil)
+    }
+    
+    
+    // KeyBoard
+    
+    func setupCloseKeyBoard(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(close_keyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func close_keyboard(){
+        view.endEditing(true)
     }
 
 }

@@ -25,12 +25,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E2K-Rr-yns">
-                    <rect key="frame" x="0.0" y="120" width="393" height="707"/>
+                    <rect key="frame" x="0.0" y="149" width="393" height="707"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="707" id="9AT-ce-3jk"/>
                     </constraints>
                     <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlikler Bulunamadı. Lütfen Bekleyiniz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NsA-Xk-9Wd">
-                        <rect key="frame" x="0.0" y="1608.0000000000002" width="393" height="70"/>
+                        <rect key="frame" x="0.0" y="1607.0000000000002" width="393" height="70"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                         <nil key="textColor"/>
@@ -42,7 +42,7 @@
                     <color key="color" red="0.4463018775" green="0.27315044399999999" blue="0.90616661310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHj-n3-tei">
-                    <rect key="frame" x="16" y="26" width="361" height="47"/>
+                    <rect key="frame" x="16" y="55" width="361" height="47"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.down.right.and.arrow.up.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lsU-U6-IgO">
                             <rect key="frame" x="305" y="0.99999999999999645" width="48" height="45.333333333333329"/>
@@ -73,11 +73,14 @@
                     </constraints>
                 </view>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pdZ-Rd-3VW">
-                    <rect key="frame" x="8" y="81" width="377" height="32"/>
+                    <rect key="frame" x="8" y="110" width="377" height="32"/>
                     <segments>
                         <segment title="Yayında Olan"/>
                         <segment title="Yayında Olmayan"/>
                     </segments>
+                    <connections>
+                        <action selector="segmentControlls:" destination="-1" eventType="valueChanged" id="KJ1-xx-6dT"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -90,7 +93,7 @@
                 <constraint firstItem="E2K-Rr-yns" firstAttribute="top" secondItem="pdZ-Rd-3VW" secondAttribute="bottom" constant="8" symbolic="YES" id="YD6-Sd-mtX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pdZ-Rd-3VW" secondAttribute="trailing" constant="8" id="aUb-xT-6tc"/>
                 <constraint firstItem="pdZ-Rd-3VW" firstAttribute="top" secondItem="XHj-n3-tei" secondAttribute="bottom" constant="8" symbolic="YES" id="dbu-s8-Hcp"/>
-                <constraint firstItem="XHj-n3-tei" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="lia-vS-wmE"/>
+                <constraint firstItem="XHj-n3-tei" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="lia-vS-wmE"/>
                 <constraint firstItem="pdZ-Rd-3VW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="p3y-hd-ITj"/>
                 <constraint firstItem="XHj-n3-tei" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="p50-M6-6Nd"/>
                 <constraint firstItem="E2K-Rr-yns" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="piN-ST-XUA"/>

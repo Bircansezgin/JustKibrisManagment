@@ -32,6 +32,9 @@ class CompanyEditVC: UIViewController {
         tableView.dataSource = self
         tableView.layer.cornerRadius = 20
         tableView.layer.masksToBounds = true
+        
+        let nib = UINib(nibName: "CompanyTCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "CompanyTCell") 
      
         
        
@@ -113,7 +116,7 @@ extension CompanyEditVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CompanyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CompanyTCell", for: indexPath) as! CompanyTCell
         
         var gelenEtkinlik: Etkinlik
         
