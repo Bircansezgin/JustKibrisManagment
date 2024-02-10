@@ -16,6 +16,14 @@
 		4316928C2B7684EA00174748 /* Company Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4316928B2B7684EA00174748 /* Company Class.swift */; };
 		431692922B76877A00174748 /* CompanyTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431692902B76877A00174748 /* CompanyTCell.swift */; };
 		431692932B76877A00174748 /* CompanyTCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431692912B76877A00174748 /* CompanyTCell.xib */; };
+		431692972B76B13900174748 /* EditDetailCompanyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431692952B76B13900174748 /* EditDetailCompanyVC.swift */; };
+		431692982B76B13900174748 /* EditDetailCompanyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431692962B76B13900174748 /* EditDetailCompanyVC.xib */; };
+		431692A12B76EE4500174748 /* NewSponsorAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4316929F2B76EE4500174748 /* NewSponsorAddVC.swift */; };
+		431692A22B76EE4500174748 /* NewSponsorAddVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431692A02B76EE4500174748 /* NewSponsorAddVC.xib */; };
+		431692A52B778DEC00174748 /* SponsorEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431692A32B778DEC00174748 /* SponsorEditVC.swift */; };
+		431692A62B778DEC00174748 /* SponsorEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431692A42B778DEC00174748 /* SponsorEditVC.xib */; };
+		434F2F822B78195E002BDF3A /* NewFirsatlarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434F2F802B78195E002BDF3A /* NewFirsatlarVC.swift */; };
+		434F2F832B78195E002BDF3A /* NewFirsatlarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 434F2F812B78195E002BDF3A /* NewFirsatlarVC.xib */; };
 		4378F9D82B752CB1008B3419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378F9D72B752CB1008B3419 /* AppDelegate.swift */; };
 		4378F9DA2B752CB1008B3419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4378F9D92B752CB1008B3419 /* SceneDelegate.swift */; };
 		4378F9E12B752CB2008B3419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4378F9E02B752CB2008B3419 /* Assets.xcassets */; };
@@ -45,6 +53,14 @@
 		4316928B2B7684EA00174748 /* Company Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Company Class.swift"; sourceTree = "<group>"; };
 		431692902B76877A00174748 /* CompanyTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTCell.swift; sourceTree = "<group>"; };
 		431692912B76877A00174748 /* CompanyTCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyTCell.xib; sourceTree = "<group>"; };
+		431692952B76B13900174748 /* EditDetailCompanyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDetailCompanyVC.swift; sourceTree = "<group>"; };
+		431692962B76B13900174748 /* EditDetailCompanyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditDetailCompanyVC.xib; sourceTree = "<group>"; };
+		4316929F2B76EE4500174748 /* NewSponsorAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSponsorAddVC.swift; sourceTree = "<group>"; };
+		431692A02B76EE4500174748 /* NewSponsorAddVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewSponsorAddVC.xib; sourceTree = "<group>"; };
+		431692A32B778DEC00174748 /* SponsorEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorEditVC.swift; sourceTree = "<group>"; };
+		431692A42B778DEC00174748 /* SponsorEditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsorEditVC.xib; sourceTree = "<group>"; };
+		434F2F802B78195E002BDF3A /* NewFirsatlarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFirsatlarVC.swift; sourceTree = "<group>"; };
+		434F2F812B78195E002BDF3A /* NewFirsatlarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewFirsatlarVC.xib; sourceTree = "<group>"; };
 		4378F9D42B752CB1008B3419 /* justkibrisManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = justkibrisManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4378F9D72B752CB1008B3419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4378F9D92B752CB1008B3419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,9 +100,10 @@
 		431692802B76841500174748 /* Company Edit */ = {
 			isa = PBXGroup;
 			children = (
-				4316928D2B76855900174748 /* Cell */,
 				431692812B76843A00174748 /* CompanyEditVC.swift */,
 				431692822B76843A00174748 /* CompanyEditVC.xib */,
+				431692942B76B0E700174748 /* EditDetailVC */,
+				4316928D2B76855900174748 /* Cell */,
 			);
 			path = "Company Edit";
 			sourceTree = "<group>";
@@ -106,6 +123,71 @@
 				431692912B76877A00174748 /* CompanyTCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		431692942B76B0E700174748 /* EditDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				431692952B76B13900174748 /* EditDetailCompanyVC.swift */,
+				431692962B76B13900174748 /* EditDetailCompanyVC.xib */,
+			);
+			path = EditDetailVC;
+			sourceTree = "<group>";
+		};
+		431692992B76EDA400174748 /* New Sponsor Add */ = {
+			isa = PBXGroup;
+			children = (
+				4316929F2B76EE4500174748 /* NewSponsorAddVC.swift */,
+				431692A02B76EE4500174748 /* NewSponsorAddVC.xib */,
+			);
+			path = "New Sponsor Add";
+			sourceTree = "<group>";
+		};
+		4316929A2B76EDB300174748 /* Sponsor Edit */ = {
+			isa = PBXGroup;
+			children = (
+				431692A32B778DEC00174748 /* SponsorEditVC.swift */,
+				431692A42B778DEC00174748 /* SponsorEditVC.xib */,
+			);
+			path = "Sponsor Edit";
+			sourceTree = "<group>";
+		};
+		4316929B2B76EDBC00174748 /* Ada Post Managment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Ada Post Managment";
+			sourceTree = "<group>";
+		};
+		4316929C2B76EDC900174748 /* Firsatlar Managment */ = {
+			isa = PBXGroup;
+			children = (
+				434F2F7F2B78193C002BDF3A /* New Firsatlar VC */,
+			);
+			path = "Firsatlar Managment";
+			sourceTree = "<group>";
+		};
+		4316929D2B76EDE200174748 /* All Users Managment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "All Users Managment";
+			sourceTree = "<group>";
+		};
+		4316929E2B76EDEE00174748 /* Reservation Managment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Reservation Managment";
+			sourceTree = "<group>";
+		};
+		434F2F7F2B78193C002BDF3A /* New Firsatlar VC */ = {
+			isa = PBXGroup;
+			children = (
+				434F2F802B78195E002BDF3A /* NewFirsatlarVC.swift */,
+				434F2F812B78195E002BDF3A /* NewFirsatlarVC.xib */,
+			);
+			path = "New Firsatlar VC";
 			sourceTree = "<group>";
 		};
 		4378F9CB2B752CB1008B3419 = {
@@ -179,8 +261,14 @@
 		4378F9F72B753D7A008B3419 /* Managment's Menu VC */ = {
 			isa = PBXGroup;
 			children = (
-				431692802B76841500174748 /* Company Edit */,
 				4378F9F82B753DDE008B3419 /* New Company Add */,
+				431692802B76841500174748 /* Company Edit */,
+				431692992B76EDA400174748 /* New Sponsor Add */,
+				4316929A2B76EDB300174748 /* Sponsor Edit */,
+				4316929B2B76EDBC00174748 /* Ada Post Managment */,
+				4316929E2B76EDEE00174748 /* Reservation Managment */,
+				4316929D2B76EDE200174748 /* All Users Managment */,
+				4316929C2B76EDC900174748 /* Firsatlar Managment */,
 			);
 			path = "Managment's Menu VC";
 			sourceTree = "<group>";
@@ -283,8 +371,12 @@
 				431692842B76843A00174748 /* CompanyEditVC.xib in Resources */,
 				431692932B76877A00174748 /* CompanyTCell.xib in Resources */,
 				4316927F2B76675700174748 /* NewCompanyAddVC.xib in Resources */,
+				431692A22B76EE4500174748 /* NewSponsorAddVC.xib in Resources */,
 				4378F9F12B752D7A008B3419 /* LoginVC.xib in Resources */,
+				431692982B76B13900174748 /* EditDetailCompanyVC.xib in Resources */,
 				4378F9F62B7537A3008B3419 /* AdminManagmentVC.xib in Resources */,
+				434F2F832B78195E002BDF3A /* NewFirsatlarVC.xib in Resources */,
+				431692A62B778DEC00174748 /* SponsorEditVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431692972B76B13900174748 /* EditDetailCompanyVC.swift in Sources */,
+				431692A52B778DEC00174748 /* SponsorEditVC.swift in Sources */,
 				4316928C2B7684EA00174748 /* Company Class.swift in Sources */,
+				431692A12B76EE4500174748 /* NewSponsorAddVC.swift in Sources */,
 				431692832B76843A00174748 /* CompanyEditVC.swift in Sources */,
 				4378F9D82B752CB1008B3419 /* AppDelegate.swift in Sources */,
 				4378F9DA2B752CB1008B3419 /* SceneDelegate.swift in Sources */,
 				431692922B76877A00174748 /* CompanyTCell.swift in Sources */,
 				4378F9F02B752D7A008B3419 /* LoginVC.swift in Sources */,
 				4378F9F52B7537A3008B3419 /* AdminManagmentVC.swift in Sources */,
+				434F2F822B78195E002BDF3A /* NewFirsatlarVC.swift in Sources */,
 				4316927E2B76675700174748 /* NewCompanyAddVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

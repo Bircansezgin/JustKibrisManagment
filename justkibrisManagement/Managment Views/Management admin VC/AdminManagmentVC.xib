@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="allUsersPushNotifButton" destination="Ubm-Po-R4C" id="A2W-ps-pxN"/>
                 <outlet property="companyEditButton" destination="q8C-ic-5hq" id="yJb-Xy-TVA"/>
+                <outlet property="firsatlarButton" destination="WEF-Gr-ERl" id="uMY-Bj-nJc"/>
                 <outlet property="headerView" destination="Wjl-I1-htv" id="8uH-QR-si3"/>
                 <outlet property="newCompanyAddButton" destination="Wek-dB-ize" id="WJn-Lu-aNL"/>
                 <outlet property="newSponsorAddButton" destination="TM6-9b-2R8" id="3I6-3H-lTX"/>
@@ -33,7 +34,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wjl-I1-htv">
-                                    <rect key="frame" x="8" y="30" width="359" height="46"/>
+                                    <rect key="frame" x="8" y="15" width="359" height="87"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yönetim Panel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W45-I6-pQG">
                                             <rect key="frame" x="8" y="8" width="343" height="30"/>
@@ -44,17 +45,27 @@
                                             <color key="textColor" red="0.92710005780000004" green="0.93400818350000003" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="example@admin.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv9-ez-UWy">
+                                            <rect key="frame" x="8" y="46" width="343" height="33"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="46" id="ByQ-ab-73d"/>
+                                        <constraint firstItem="Fv9-ez-UWy" firstAttribute="leading" secondItem="W45-I6-pQG" secondAttribute="leading" id="AbU-aX-fCg"/>
+                                        <constraint firstAttribute="height" constant="87" id="ByQ-ab-73d"/>
                                         <constraint firstItem="W45-I6-pQG" firstAttribute="leading" secondItem="Wjl-I1-htv" secondAttribute="leading" constant="8" id="CRl-Yz-XBf"/>
+                                        <constraint firstItem="Fv9-ez-UWy" firstAttribute="bottom" secondItem="Wjl-I1-htv" secondAttribute="bottomMargin" id="KPg-Jb-uyy"/>
                                         <constraint firstAttribute="trailing" secondItem="W45-I6-pQG" secondAttribute="trailing" constant="8" id="MQs-aa-ygk"/>
                                         <constraint firstItem="W45-I6-pQG" firstAttribute="top" secondItem="Wjl-I1-htv" secondAttribute="top" constant="8" id="OyM-Uw-0bc"/>
+                                        <constraint firstItem="Fv9-ez-UWy" firstAttribute="top" secondItem="W45-I6-pQG" secondAttribute="bottom" constant="8" symbolic="YES" id="hWa-bV-z3W"/>
+                                        <constraint firstItem="Fv9-ez-UWy" firstAttribute="trailing" secondItem="W45-I6-pQG" secondAttribute="trailing" id="sX5-pM-Wm2"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRW-UM-g2x">
-                                    <rect key="frame" x="6" y="84" width="361" height="331"/>
+                                    <rect key="frame" x="6" y="107" width="361" height="455"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşletme Yönetim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jU-3V-u6x">
                                             <rect key="frame" x="8" y="8" width="345" height="21"/>
@@ -71,7 +82,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="bGY-MU-Esm"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="party.popper" catalog="system" title="Yeni İşletme Ekle" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="party.popper" catalog="system" title="Yeni İşletme Ekle" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                             </buttonConfiguration>
@@ -82,7 +93,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="WAF-Yj-cmq"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="pencil" catalog="system" title="İşletme Düzenle" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="pencil" catalog="system" title="İşletme Düzenle" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
                                             </buttonConfiguration>
@@ -93,7 +104,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="8VU-eA-8Mp"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="balloon.2.fill" catalog="system" title="Yeni Sponsor Ekle" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="balloon.2.fill" catalog="system" title="Yeni Sponsor Ekle" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
                                             </buttonConfiguration>
@@ -104,7 +115,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="dnu-e7-gnz"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="pencil.and.scribble" catalog="system" title="Sponsor Düzenle" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="pencil.and.scribble" catalog="system" title="Sponsor Düzenle" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
                                             </buttonConfiguration>
@@ -115,9 +126,31 @@
                                                 <constraint firstAttribute="height" constant="50" id="rQv-1c-rVU"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="paperplane" catalog="system" title="Tüm Kullanıcılara Bildirim Gönder" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="paperplane" catalog="system" title="Tüm Kullanıcılara Bildirim Gönder" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bui-u1-3ZS">
+                                            <rect key="frame" x="8" y="327" width="345" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="lAp-hC-zzk"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" image="network" catalog="system" title="Ada Post Yönetimi" imagePadding="7" cornerStyle="large">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="baseBackgroundColor" red="0.60653592140000001" green="0.0" blue="0.037077420129999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </buttonConfiguration>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEF-Gr-ERl">
+                                            <rect key="frame" x="8" y="385" width="345" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="EGR-5C-h8W"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="filled" image="newspaper.fill" catalog="system" title="Fırsatlar Yönetimi" imagePadding="7" cornerStyle="large">
+                                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="baseBackgroundColor" red="0.49692491029713326" green="0.49921893240068504" blue="0.50610099871134029" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </buttonConfiguration>
                                         </button>
                                     </subviews>
@@ -125,10 +158,12 @@
                                     <constraints>
                                         <constraint firstItem="TM6-9b-2R8" firstAttribute="top" secondItem="q8C-ic-5hq" secondAttribute="bottom" constant="8" symbolic="YES" id="2L7-W9-G1f"/>
                                         <constraint firstItem="Wek-dB-ize" firstAttribute="top" secondItem="9jU-3V-u6x" secondAttribute="bottom" constant="8" symbolic="YES" id="4HV-Oq-PQt"/>
+                                        <constraint firstItem="Bui-u1-3ZS" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="520-WO-6vg"/>
                                         <constraint firstItem="Ubm-Po-R4C" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="Bgi-Em-iRS"/>
                                         <constraint firstItem="kDg-70-gea" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="H7s-ux-oNA"/>
                                         <constraint firstItem="q8C-ic-5hq" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="HHK-OI-XVB"/>
                                         <constraint firstItem="Wek-dB-ize" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="IvN-a1-KVf"/>
+                                        <constraint firstAttribute="trailing" secondItem="WEF-Gr-ERl" secondAttribute="trailing" constant="8" id="KkJ-yg-h51"/>
                                         <constraint firstItem="9jU-3V-u6x" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="Kmy-kH-dAb"/>
                                         <constraint firstItem="q8C-ic-5hq" firstAttribute="top" secondItem="Wek-dB-ize" secondAttribute="bottom" constant="8" symbolic="YES" id="NAE-lJ-XYn"/>
                                         <constraint firstAttribute="trailing" secondItem="q8C-ic-5hq" secondAttribute="trailing" constant="8" id="O5p-TS-C2I"/>
@@ -138,14 +173,18 @@
                                         <constraint firstAttribute="trailing" secondItem="Wek-dB-ize" secondAttribute="trailing" constant="8" id="WsV-cq-yCe"/>
                                         <constraint firstAttribute="trailing" secondItem="kDg-70-gea" secondAttribute="trailing" constant="8" id="dBR-hj-7kr"/>
                                         <constraint firstItem="TM6-9b-2R8" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="i46-TO-3lG"/>
+                                        <constraint firstItem="Bui-u1-3ZS" firstAttribute="top" secondItem="Ubm-Po-R4C" secondAttribute="bottom" constant="8" symbolic="YES" id="lUz-JP-dTs"/>
                                         <constraint firstAttribute="trailing" secondItem="TM6-9b-2R8" secondAttribute="trailing" constant="8" id="m6g-PS-577"/>
                                         <constraint firstAttribute="trailing" secondItem="9jU-3V-u6x" secondAttribute="trailing" constant="8" id="nAf-EW-IqL"/>
                                         <constraint firstItem="9jU-3V-u6x" firstAttribute="top" secondItem="KRW-UM-g2x" secondAttribute="top" constant="8" id="nrm-UK-cNJ"/>
-                                        <constraint firstAttribute="height" constant="331" id="rYP-ak-TVQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bui-u1-3ZS" secondAttribute="trailing" constant="8" id="pRA-Cb-6qB"/>
+                                        <constraint firstItem="WEF-Gr-ERl" firstAttribute="top" secondItem="Bui-u1-3ZS" secondAttribute="bottom" constant="8" symbolic="YES" id="pcq-C2-Wct"/>
+                                        <constraint firstAttribute="height" constant="455" id="rYP-ak-TVQ"/>
+                                        <constraint firstItem="WEF-Gr-ERl" firstAttribute="leading" secondItem="KRW-UM-g2x" secondAttribute="leading" constant="8" id="wmU-dk-5w9"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38M-Am-RrA">
-                                    <rect key="frame" x="6" y="423" width="361" height="213"/>
+                                    <rect key="frame" x="6" y="570" width="361" height="213"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kullanıcı Yönetim" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZv-Yg-W3G">
                                             <rect key="frame" x="8" y="8" width="345" height="21"/>
@@ -162,7 +201,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="t0h-o8-cGR"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" title="Kullanıcıları Göster" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="person.fill" catalog="system" title="Kullanıcıları Göster" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="systemPurpleColor"/>
                                             </buttonConfiguration>
@@ -173,7 +212,7 @@
                                                 <constraint firstAttribute="height" constant="50" id="rtW-Ss-rGl"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" image="message.badge.fill" catalog="system" title="Tüm Rezervasyonlar" cornerStyle="large">
+                                            <buttonConfiguration key="configuration" style="filled" image="message.badge.fill" catalog="system" title="Tüm Rezervasyonlar" imagePadding="2" cornerStyle="large">
                                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="baseBackgroundColor" systemColor="tableCellBlueTextColor"/>
                                             </buttonConfiguration>
@@ -212,12 +251,12 @@
                             <constraints>
                                 <constraint firstItem="38M-Am-RrA" firstAttribute="leading" secondItem="r0K-Wz-GBd" secondAttribute="leading" constant="6" id="E6E-AR-K6o"/>
                                 <constraint firstItem="Wjl-I1-htv" firstAttribute="leading" secondItem="r0K-Wz-GBd" secondAttribute="leading" constant="8" id="MdM-EY-Yvs"/>
-                                <constraint firstItem="Wjl-I1-htv" firstAttribute="top" secondItem="r0K-Wz-GBd" secondAttribute="top" constant="30" id="Mji-mC-7Jl"/>
+                                <constraint firstItem="Wjl-I1-htv" firstAttribute="top" secondItem="r0K-Wz-GBd" secondAttribute="top" constant="15" id="Mji-mC-7Jl"/>
                                 <constraint firstAttribute="height" constant="1000" id="SQb-YU-fFM"/>
                                 <constraint firstAttribute="trailing" secondItem="38M-Am-RrA" secondAttribute="trailing" constant="8" id="aO5-gE-M2g"/>
                                 <constraint firstAttribute="trailing" secondItem="Wjl-I1-htv" secondAttribute="trailing" constant="8" id="b3E-Un-Ec8"/>
-                                <constraint firstItem="KRW-UM-g2x" firstAttribute="top" secondItem="Wjl-I1-htv" secondAttribute="bottom" constant="8" symbolic="YES" id="d4f-p2-cnC"/>
-                                <constraint firstItem="38M-Am-RrA" firstAttribute="top" secondItem="KRW-UM-g2x" secondAttribute="bottom" constant="8" symbolic="YES" id="dfJ-yI-zjJ"/>
+                                <constraint firstItem="KRW-UM-g2x" firstAttribute="top" secondItem="Wjl-I1-htv" secondAttribute="bottom" constant="5" id="d4f-p2-cnC"/>
+                                <constraint firstItem="38M-Am-RrA" firstAttribute="top" secondItem="KRW-UM-g2x" secondAttribute="bottom" constant="8" id="dfJ-yI-zjJ"/>
                                 <constraint firstItem="KRW-UM-g2x" firstAttribute="leading" secondItem="r0K-Wz-GBd" secondAttribute="leading" constant="6" id="oq7-ac-WAj"/>
                                 <constraint firstAttribute="trailing" secondItem="KRW-UM-g2x" secondAttribute="trailing" constant="8" id="z22-TL-DnA"/>
                             </constraints>
@@ -246,6 +285,8 @@
     <resources>
         <image name="balloon.2.fill" catalog="system" width="100" height="128"/>
         <image name="message.badge.fill" catalog="system" width="128" height="122"/>
+        <image name="network" catalog="system" width="128" height="123"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="112"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <image name="party.popper" catalog="system" width="128" height="116"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
@@ -256,25 +297,25 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

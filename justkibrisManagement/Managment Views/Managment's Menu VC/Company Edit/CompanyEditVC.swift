@@ -34,7 +34,7 @@ class CompanyEditVC: UIViewController {
         tableView.layer.masksToBounds = true
         
         let nib = UINib(nibName: "CompanyTCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "CompanyTCell") 
+        tableView.register(nib, forCellReuseIdentifier: "CompanyTCell")
      
         
        
@@ -171,16 +171,14 @@ extension CompanyEditVC: UITableViewDelegate, UITableViewDataSource{
         
         if let selectedActivity = selectedActivity {
             
-           performSegue(withIdentifier: "detay", sender: selectedActivity)
+          let editDetailCompany = EditDetailCompanyVC()
+            editDetailCompany.incomingActivity = selectedActivity
+            editDetailCompany.modalPresentationStyle = .fullScreen // veya .pageSheet
+            editDetailCompany.modalTransitionStyle = .coverVertical
+            present(editDetailCompany, animated: true, completion: nil)
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "detay", let selectedIlan = sender as? Etkinlik, let destionationVC = segue.destination as? ActivityDetailEditVC {
-//            destionationVC.incomingActivity = selectedIlan
-//        }
-    }
-
 
     
     

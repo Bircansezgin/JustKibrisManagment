@@ -26,6 +26,10 @@ class LoginVC: UIViewController {
         setupUI()
         setupButton()
         setupCloseKeyBoard()
+        DispatchQueue.main.async {
+            self.autoLogin()
+        }
+        
     }
     
     
@@ -33,6 +37,7 @@ class LoginVC: UIViewController {
     
 }
 
+// MARK: - Setup UI
 extension LoginVC{
     private func setupUI(){
         backView.layer.cornerRadius = 20
@@ -43,6 +48,7 @@ extension LoginVC{
     }
 }
 
+//MARK: - Login
 extension LoginVC{
     private func setupButton(){
         loginButton.addTarget(self, action: #selector(loginClick), for: .touchUpInside)
@@ -98,21 +104,24 @@ extension LoginVC{
         }
     }
 
-
     
+       
+       private func navigateToHomePage() {
+           let adminManagementVC = AdminManagmentVC()
+           adminManagementVC.modalPresentationStyle = .fullScreen // veya .pageSheet
+           adminManagementVC.modalTransitionStyle = .coverVertical
+           present(adminManagementVC, animated: true, completion: nil)
+       }
+}
+
+//MARK: -
+extension LoginVC{
+    // ALert
     private func showAlert(message: String) {
         let alert = UIAlertController(title: "Hata", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Tamam", style: .default))
         present(alert, animated: true)
     }
-    
-    private func navigateToHomePage() {
-        let adminManagementVC = AdminManagmentVC()
-        adminManagementVC.modalPresentationStyle = .fullScreen // veya .pageSheet
-        adminManagementVC.modalTransitionStyle = .coverVertical
-        present(adminManagementVC, animated: true, completion: nil)
-    }
-    
     
     // KeyBoard
     
@@ -124,5 +133,17 @@ extension LoginVC{
     @objc func close_keyboard(){
         view.endEditing(true)
     }
+}
 
+
+// Auto Login
+extension LoginVC{
+    private func autoLogin() {
+        if Auth.auth().currentUser != nil {
+            print("Gecis Var")
+            navigateToHomePage()
+        }else{
+            print("Aktif Kullanici Yok!")
+        }
+    }
 }

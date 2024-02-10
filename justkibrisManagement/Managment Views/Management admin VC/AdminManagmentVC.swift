@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class AdminManagmentVC: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
@@ -18,6 +18,7 @@ class AdminManagmentVC: UIViewController {
     @IBOutlet weak var newSponsorAddButton: UIButton!
     @IBOutlet weak var sponsorEditButton: UIButton!
     @IBOutlet weak var allUsersPushNotifButton: UIButton!
+    @IBOutlet weak var firsatlarButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -48,6 +49,9 @@ extension AdminManagmentVC{
     private func setupButton(){
         newCompanyAddButton.addTarget(self, action: #selector(goNewAddCompany), for: .touchUpInside)
         companyEditButton.addTarget(self, action: #selector(goCompanyEdit), for: .touchUpInside)
+        newSponsorAddButton.addTarget(self, action: #selector(goNewSponsor), for: .touchUpInside)
+        firsatlarButton.addTarget(self, action: #selector(goFirsatlar), for: .touchUpInside)
+        
     }
 }
 
@@ -65,5 +69,19 @@ extension AdminManagmentVC{
         companyEditPage.modalPresentationStyle = .fullScreen // veya .pageSheet
         companyEditPage.modalTransitionStyle = .coverVertical
         present(companyEditPage, animated: true, completion: nil)
+    }
+    
+    @objc func goNewSponsor(){
+        let newSponsorVC = NewSponsorAddVC()
+        newSponsorVC.modalPresentationStyle = .fullScreen
+        newSponsorVC.modalTransitionStyle = .coverVertical
+        present(newSponsorVC, animated: true, completion: nil)
+    }
+    
+    @objc func goFirsatlar(){
+        let newFirsatlarVC = NewFirsatlarVC()
+        newFirsatlarVC.modalPresentationStyle = .fullScreen
+        newFirsatlarVC.modalTransitionStyle = .coverVertical
+        present(newFirsatlarVC, animated: true, completion: nil)
     }
 }
