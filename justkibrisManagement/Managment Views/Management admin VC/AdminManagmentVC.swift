@@ -19,6 +19,7 @@ class AdminManagmentVC: UIViewController {
     @IBOutlet weak var sponsorEditButton: UIButton!
     @IBOutlet weak var allUsersPushNotifButton: UIButton!
     @IBOutlet weak var firsatlarButton: UIButton!
+    @IBOutlet weak var partnersManagerButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -51,6 +52,7 @@ extension AdminManagmentVC{
         companyEditButton.addTarget(self, action: #selector(goCompanyEdit), for: .touchUpInside)
         newSponsorAddButton.addTarget(self, action: #selector(goNewSponsor), for: .touchUpInside)
         firsatlarButton.addTarget(self, action: #selector(goFirsatlar), for: .touchUpInside)
+        partnersManagerButton.addTarget(self, action: #selector(goPartnersManagment), for: .touchUpInside)
         
     }
 }
@@ -83,5 +85,12 @@ extension AdminManagmentVC{
         newFirsatlarVC.modalPresentationStyle = .fullScreen
         newFirsatlarVC.modalTransitionStyle = .coverVertical
         present(newFirsatlarVC, animated: true, completion: nil)
+    }
+    
+    @objc func goPartnersManagment(){
+        let partnersManagment = PartnesControllVC()
+        partnersManagment.modalPresentationStyle = .fullScreen
+        partnersManagment.modalTransitionStyle = .coverVertical
+        present(partnersManagment, animated: true, completion: nil)
     }
 }

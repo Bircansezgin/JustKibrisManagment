@@ -43,6 +43,10 @@
 		4378FA0C2B758D58008B3419 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0B2B758D58008B3419 /* FirebaseFunctions */; };
 		4378FA0E2B758D5D008B3419 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0D2B758D5D008B3419 /* FirebaseMessaging */; };
 		4378FA102B758D61008B3419 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0F2B758D61008B3419 /* FirebaseStorage */; };
+		84C578A92B8A8AE600705F65 /* PartnesControllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C578A72B8A8AE600705F65 /* PartnesControllVC.swift */; };
+		84C578AA2B8A8AE600705F65 /* PartnesControllVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C578A82B8A8AE600705F65 /* PartnesControllVC.xib */; };
+		84C578AE2B8A8B7E00705F65 /* AddPartnersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C578AC2B8A8B7E00705F65 /* AddPartnersVC.swift */; };
+		84C578AF2B8A8B7E00705F65 /* AddPartnersVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C578AD2B8A8B7E00705F65 /* AddPartnersVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,10 @@
 		4378F9F32B7537A3008B3419 /* AdminManagmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminManagmentVC.swift; sourceTree = "<group>"; };
 		4378F9F42B7537A3008B3419 /* AdminManagmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminManagmentVC.xib; sourceTree = "<group>"; };
 		4378F9F92B7573D2008B3419 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84C578A72B8A8AE600705F65 /* PartnesControllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnesControllVC.swift; sourceTree = "<group>"; };
+		84C578A82B8A8AE600705F65 /* PartnesControllVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnesControllVC.xib; sourceTree = "<group>"; };
+		84C578AC2B8A8B7E00705F65 /* AddPartnersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPartnersVC.swift; sourceTree = "<group>"; };
+		84C578AD2B8A8B7E00705F65 /* AddPartnersVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPartnersVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +269,8 @@
 		4378F9F72B753D7A008B3419 /* Managment's Menu VC */ = {
 			isa = PBXGroup;
 			children = (
+				84C578A62B8A825000705F65 /* PartnersManagment */,
+				84D354B32B835F7B00F8802C /* MoneyRequest */,
 				4378F9F82B753DDE008B3419 /* New Company Add */,
 				431692802B76841500174748 /* Company Edit */,
 				431692992B76EDA400174748 /* New Sponsor Add */,
@@ -287,6 +297,40 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C578A62B8A825000705F65 /* PartnersManagment */ = {
+			isa = PBXGroup;
+			children = (
+				84C578AB2B8A8B6B00705F65 /* Add Partners */,
+				84C578A72B8A8AE600705F65 /* PartnesControllVC.swift */,
+				84C578A82B8A8AE600705F65 /* PartnesControllVC.xib */,
+			);
+			path = PartnersManagment;
+			sourceTree = "<group>";
+		};
+		84C578AB2B8A8B6B00705F65 /* Add Partners */ = {
+			isa = PBXGroup;
+			children = (
+				84C578AC2B8A8B7E00705F65 /* AddPartnersVC.swift */,
+				84C578AD2B8A8B7E00705F65 /* AddPartnersVC.xib */,
+			);
+			path = "Add Partners";
+			sourceTree = "<group>";
+		};
+		84D354B32B835F7B00F8802C /* MoneyRequest */ = {
+			isa = PBXGroup;
+			children = (
+				84D354B42B835F8A00F8802C /* View */,
+			);
+			path = MoneyRequest;
+			sourceTree = "<group>";
+		};
+		84D354B42B835F8A00F8802C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,9 +418,11 @@
 				431692A22B76EE4500174748 /* NewSponsorAddVC.xib in Resources */,
 				4378F9F12B752D7A008B3419 /* LoginVC.xib in Resources */,
 				431692982B76B13900174748 /* EditDetailCompanyVC.xib in Resources */,
+				84C578AA2B8A8AE600705F65 /* PartnesControllVC.xib in Resources */,
 				4378F9F62B7537A3008B3419 /* AdminManagmentVC.xib in Resources */,
 				434F2F832B78195E002BDF3A /* NewFirsatlarVC.xib in Resources */,
 				431692A62B778DEC00174748 /* SponsorEditVC.xib in Resources */,
+				84C578AF2B8A8B7E00705F65 /* AddPartnersVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +440,9 @@
 				431692832B76843A00174748 /* CompanyEditVC.swift in Sources */,
 				4378F9D82B752CB1008B3419 /* AppDelegate.swift in Sources */,
 				4378F9DA2B752CB1008B3419 /* SceneDelegate.swift in Sources */,
+				84C578A92B8A8AE600705F65 /* PartnesControllVC.swift in Sources */,
 				431692922B76877A00174748 /* CompanyTCell.swift in Sources */,
+				84C578AE2B8A8B7E00705F65 /* AddPartnersVC.swift in Sources */,
 				4378F9F02B752D7A008B3419 /* LoginVC.swift in Sources */,
 				4378F9F52B7537A3008B3419 /* AdminManagmentVC.swift in Sources */,
 				434F2F822B78195E002BDF3A /* NewFirsatlarVC.swift in Sources */,

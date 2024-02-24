@@ -174,7 +174,7 @@ extension NewFirsatlarVC {
         
 
         var ref: DocumentReference? = nil
-        var uuids = UUID().uuidString
+        let uuids = UUID().uuidString
         let db = Firestore.firestore()
         let customDocumentName = "\(firsatBasligi)\(uuids)"
         db.collection("firsatlar").document(customDocumentName).setData([
@@ -186,7 +186,8 @@ extension NewFirsatlarVC {
             "firsatSistemKapanisTarih": firsatSistemKapanisTarihTimestamp,
             "firsatKullanimSayisi": firsatKullanimSayisi,
             "isActive": isActive ? 1 : 0,
-            "firsatEklenmeTarihi": FieldValue.serverTimestamp()
+            "firsatEklenmeTarihi": FieldValue.serverTimestamp(),
+            "documentID":customDocumentName
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
