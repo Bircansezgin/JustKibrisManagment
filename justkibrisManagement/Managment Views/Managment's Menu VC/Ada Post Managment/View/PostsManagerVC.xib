@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostsManagerVC" customModule="justkibrisManagement" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentControll" destination="JXY-Na-7Jo" id="4PK-Ay-ooC"/>
+                <outlet property="tableView" destination="gTw-XH-PdO" id="NiZ-yf-feI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="JXY-Na-7Jo">
+                    <rect key="frame" x="12" y="79" width="369" height="32"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="7CN-u9-e3H"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Onaylanmış Postlar"/>
+                        <segment title="Onay Bekleyen Postlar"/>
+                        <segment title="Onay Almamış Postlar"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentActions:" destination="-1" eventType="valueChanged" id="tjh-DC-cFB"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gTw-XH-PdO">
+                    <rect key="frame" x="13" y="118" width="367" height="700"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gTw-XH-PdO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="1if-mB-8H0"/>
+                <constraint firstItem="JXY-Na-7Jo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="9a0-G0-q1w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JXY-Na-7Jo" secondAttribute="trailing" constant="12" id="MKV-d3-01n"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gTw-XH-PdO" secondAttribute="trailing" constant="13" id="Z3E-0x-Rbo"/>
+                <constraint firstItem="JXY-Na-7Jo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="coD-Ac-HAa"/>
+                <constraint firstItem="gTw-XH-PdO" firstAttribute="top" secondItem="JXY-Na-7Jo" secondAttribute="bottom" constant="8" symbolic="YES" id="kLl-6J-dER"/>
+                <constraint firstItem="gTw-XH-PdO" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="opm-NB-2F2"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

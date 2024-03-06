@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirsatlarManagmetVC" customModule="justkibrisManagement" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="Rip-hm-fR2" id="QFz-Yw-7Sr"/>
+                <outlet property="exitButton" destination="Hmh-zu-kTU" id="dex-EN-TJN"/>
+                <outlet property="newFirsatButton" destination="Sez-GP-DT5" id="hnN-YI-1iC"/>
+                <outlet property="tableView" destination="wna-Dt-1bB" id="Zn4-Ep-rCD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rip-hm-fR2">
+                    <rect key="frame" x="16" y="50" width="343" height="97"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fTY-0U-yoj">
+                            <rect key="frame" x="4" y="58" width="331" height="32"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="gMl-Rp-Xa0"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Yayında Olan"/>
+                                <segment title="Yayında Olmayan"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentActions:" destination="-1" eventType="valueChanged" id="eJL-rM-y6N"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hmh-zu-kTU">
+                            <rect key="frame" x="8" y="8" width="162" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="50K-tL-luO"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Çıkış Yap">
+                                <color key="baseBackgroundColor" red="0.80987185240000004" green="0.049507305109999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-GP-DT5">
+                            <rect key="frame" x="178" y="8" width="162" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="8yV-Kx-TX1"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Yeni Fırsat Ekle">
+                                <color key="baseBackgroundColor" red="0.0" green="0.51476362180000002" blue="0.066462893310000007" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Sez-GP-DT5" firstAttribute="leading" secondItem="Hmh-zu-kTU" secondAttribute="trailing" constant="8" symbolic="YES" id="Jfg-bx-QH3"/>
+                        <constraint firstItem="fTY-0U-yoj" firstAttribute="top" secondItem="Hmh-zu-kTU" secondAttribute="bottom" constant="8" symbolic="YES" id="L90-iz-5l8"/>
+                        <constraint firstItem="Sez-GP-DT5" firstAttribute="top" secondItem="Rip-hm-fR2" secondAttribute="top" constant="8" id="PVB-g0-jOe"/>
+                        <constraint firstAttribute="height" constant="97" id="QAg-6O-RJu"/>
+                        <constraint firstItem="Hmh-zu-kTU" firstAttribute="leading" secondItem="Rip-hm-fR2" secondAttribute="leading" constant="8" id="RwR-bz-zgM"/>
+                        <constraint firstItem="Hmh-zu-kTU" firstAttribute="width" secondItem="Sez-GP-DT5" secondAttribute="width" id="SxJ-EG-GeE"/>
+                        <constraint firstAttribute="trailing" secondItem="fTY-0U-yoj" secondAttribute="trailing" constant="8" id="UC1-92-IeO"/>
+                        <constraint firstAttribute="trailing" secondItem="Sez-GP-DT5" secondAttribute="trailing" constant="3" id="cdn-Vf-weI"/>
+                        <constraint firstItem="fTY-0U-yoj" firstAttribute="leading" secondItem="Rip-hm-fR2" secondAttribute="leading" constant="4" id="gHL-9e-4b3"/>
+                        <constraint firstItem="Hmh-zu-kTU" firstAttribute="top" secondItem="Rip-hm-fR2" secondAttribute="top" constant="8" id="wRV-lE-afp"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wna-Dt-1bB">
+                    <rect key="frame" x="16" y="155" width="343" height="623"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wna-Dt-1bB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Iy8-9O-2kS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rip-hm-fR2" secondAttribute="trailing" constant="16" id="Q00-DI-LUS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wna-Dt-1bB" secondAttribute="trailing" constant="16" id="QKJ-ip-wpC"/>
+                <constraint firstItem="wna-Dt-1bB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Tnc-bF-tKu"/>
+                <constraint firstItem="Rip-hm-fR2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Vu5-uE-1tO"/>
+                <constraint firstItem="wna-Dt-1bB" firstAttribute="top" secondItem="Rip-hm-fR2" secondAttribute="bottom" constant="8" symbolic="YES" id="XyE-SF-SdZ"/>
+                <constraint firstItem="Rip-hm-fR2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gfl-rq-MLO"/>
+            </constraints>
+            <point key="canvasLocation" x="121.37404580152672" y="19.014084507042256"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

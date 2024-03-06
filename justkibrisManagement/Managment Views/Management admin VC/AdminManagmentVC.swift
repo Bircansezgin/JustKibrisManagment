@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 class AdminManagmentVC: UIViewController {
 
     @IBOutlet weak var headerView: UIView!
@@ -20,12 +21,15 @@ class AdminManagmentVC: UIViewController {
     @IBOutlet weak var allUsersPushNotifButton: UIButton!
     @IBOutlet weak var firsatlarButton: UIButton!
     @IBOutlet weak var partnersManagerButton: UIButton!
+    @IBOutlet weak var adaPostButton: UIButton!
+    @IBOutlet weak var ShowAllUsersButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
             self.setupUI()
+            
         }
         self.setupButton()
     }
@@ -53,6 +57,7 @@ extension AdminManagmentVC{
         newSponsorAddButton.addTarget(self, action: #selector(goNewSponsor), for: .touchUpInside)
         firsatlarButton.addTarget(self, action: #selector(goFirsatlar), for: .touchUpInside)
         partnersManagerButton.addTarget(self, action: #selector(goPartnersManagment), for: .touchUpInside)
+        adaPostButton.addTarget(self, action: #selector(goToAdaPost), for: .touchUpInside)
         
     }
 }
@@ -81,7 +86,7 @@ extension AdminManagmentVC{
     }
     
     @objc func goFirsatlar(){
-        let newFirsatlarVC = NewFirsatlarVC()
+        let newFirsatlarVC = FirsatlarManagmetVC()
         newFirsatlarVC.modalPresentationStyle = .fullScreen
         newFirsatlarVC.modalTransitionStyle = .coverVertical
         present(newFirsatlarVC, animated: true, completion: nil)
@@ -93,4 +98,12 @@ extension AdminManagmentVC{
         partnersManagment.modalTransitionStyle = .coverVertical
         present(partnersManagment, animated: true, completion: nil)
     }
+    
+    @objc func goToAdaPost(){
+        let postManager = PostsManagerVC()
+        postManager.modalTransitionStyle = .coverVertical
+        present(postManager, animated: true, completion: nil)
+    }
+    
+ 
 }

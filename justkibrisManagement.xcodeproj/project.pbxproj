@@ -43,6 +43,23 @@
 		4378FA0C2B758D58008B3419 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0B2B758D58008B3419 /* FirebaseFunctions */; };
 		4378FA0E2B758D5D008B3419 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0D2B758D5D008B3419 /* FirebaseMessaging */; };
 		4378FA102B758D61008B3419 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4378FA0F2B758D61008B3419 /* FirebaseStorage */; };
+		84858BAC2B90B3ED00371391 /* PostsManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BAA2B90B3ED00371391 /* PostsManagerVC.swift */; };
+		84858BAD2B90B3ED00371391 /* PostsManagerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BAB2B90B3ED00371391 /* PostsManagerVC.xib */; };
+		84858BB12B90D33000371391 /* PostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BAF2B90D33000371391 /* PostsCell.swift */; };
+		84858BB22B90D33000371391 /* PostsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BB02B90D33000371391 /* PostsCell.xib */; };
+		84858BB52B90D56500371391 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BB42B90D56500371391 /* PostManager.swift */; };
+		84858BBA2B90E36600371391 /* PostDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BB82B90E36600371391 /* PostDetailVC.swift */; };
+		84858BBB2B90E36600371391 /* PostDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BB92B90E36600371391 /* PostDetailVC.xib */; };
+		84858BBF2B90F30100371391 /* SponsorEditDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BBD2B90F30100371391 /* SponsorEditDetailVC.swift */; };
+		84858BC02B90F30100371391 /* SponsorEditDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BBE2B90F30100371391 /* SponsorEditDetailVC.xib */; };
+		84858BC52B924FD800371391 /* FirsatlarManagmetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BC32B924FD800371391 /* FirsatlarManagmetVC.swift */; };
+		84858BC62B924FD800371391 /* FirsatlarManagmetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BC42B924FD800371391 /* FirsatlarManagmetVC.xib */; };
+		84858BC92B92550000371391 /* FirsatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BC82B92550000371391 /* FirsatData.swift */; };
+		84858BCC2B92557000371391 /* FirsatlarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BCA2B92557000371391 /* FirsatlarCell.swift */; };
+		84858BCD2B92557000371391 /* FirsatlarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BCB2B92557000371391 /* FirsatlarCell.xib */; };
+		84858BD12B925ACC00371391 /* FirsatDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BCF2B925ACC00371391 /* FirsatDetailVC.swift */; };
+		84858BD22B925ACC00371391 /* FirsatDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84858BD02B925ACC00371391 /* FirsatDetailVC.xib */; };
+		84858BD42B92614000371391 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84858BD32B92614000371391 /* UIView+Extensions.swift */; };
 		84C578A92B8A8AE600705F65 /* PartnesControllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C578A72B8A8AE600705F65 /* PartnesControllVC.swift */; };
 		84C578AA2B8A8AE600705F65 /* PartnesControllVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C578A82B8A8AE600705F65 /* PartnesControllVC.xib */; };
 		84C578AE2B8A8B7E00705F65 /* AddPartnersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C578AC2B8A8B7E00705F65 /* AddPartnersVC.swift */; };
@@ -76,6 +93,23 @@
 		4378F9F32B7537A3008B3419 /* AdminManagmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminManagmentVC.swift; sourceTree = "<group>"; };
 		4378F9F42B7537A3008B3419 /* AdminManagmentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdminManagmentVC.xib; sourceTree = "<group>"; };
 		4378F9F92B7573D2008B3419 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84858BAA2B90B3ED00371391 /* PostsManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsManagerVC.swift; sourceTree = "<group>"; };
+		84858BAB2B90B3ED00371391 /* PostsManagerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsManagerVC.xib; sourceTree = "<group>"; };
+		84858BAF2B90D33000371391 /* PostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCell.swift; sourceTree = "<group>"; };
+		84858BB02B90D33000371391 /* PostsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCell.xib; sourceTree = "<group>"; };
+		84858BB42B90D56500371391 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		84858BB82B90E36600371391 /* PostDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailVC.swift; sourceTree = "<group>"; };
+		84858BB92B90E36600371391 /* PostDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailVC.xib; sourceTree = "<group>"; };
+		84858BBD2B90F30100371391 /* SponsorEditDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorEditDetailVC.swift; sourceTree = "<group>"; };
+		84858BBE2B90F30100371391 /* SponsorEditDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsorEditDetailVC.xib; sourceTree = "<group>"; };
+		84858BC32B924FD800371391 /* FirsatlarManagmetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsatlarManagmetVC.swift; sourceTree = "<group>"; };
+		84858BC42B924FD800371391 /* FirsatlarManagmetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirsatlarManagmetVC.xib; sourceTree = "<group>"; };
+		84858BC82B92550000371391 /* FirsatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsatData.swift; sourceTree = "<group>"; };
+		84858BCA2B92557000371391 /* FirsatlarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsatlarCell.swift; sourceTree = "<group>"; };
+		84858BCB2B92557000371391 /* FirsatlarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirsatlarCell.xib; sourceTree = "<group>"; };
+		84858BCF2B925ACC00371391 /* FirsatDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirsatDetailVC.swift; sourceTree = "<group>"; };
+		84858BD02B925ACC00371391 /* FirsatDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirsatDetailVC.xib; sourceTree = "<group>"; };
+		84858BD32B92614000371391 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		84C578A72B8A8AE600705F65 /* PartnesControllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnesControllVC.swift; sourceTree = "<group>"; };
 		84C578A82B8A8AE600705F65 /* PartnesControllVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnesControllVC.xib; sourceTree = "<group>"; };
 		84C578AC2B8A8B7E00705F65 /* AddPartnersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPartnersVC.swift; sourceTree = "<group>"; };
@@ -154,6 +188,7 @@
 		4316929A2B76EDB300174748 /* Sponsor Edit */ = {
 			isa = PBXGroup;
 			children = (
+				84858BBC2B90F2CA00371391 /* EditDetailVC */,
 				431692A32B778DEC00174748 /* SponsorEditVC.swift */,
 				431692A42B778DEC00174748 /* SponsorEditVC.xib */,
 			);
@@ -163,6 +198,10 @@
 		4316929B2B76EDBC00174748 /* Ada Post Managment */ = {
 			isa = PBXGroup;
 			children = (
+				84858BB32B90D54300371391 /* DataManager */,
+				84858BB62B90E33400371391 /* Post Detail */,
+				84858BAE2B90BAA800371391 /* Cell */,
+				84858BA92B90B3BB00371391 /* View */,
 			);
 			path = "Ada Post Managment";
 			sourceTree = "<group>";
@@ -170,6 +209,9 @@
 		4316929C2B76EDC900174748 /* Firsatlar Managment */ = {
 			isa = PBXGroup;
 			children = (
+				84858BCE2B925AB200371391 /* Firsat Detail */,
+				84858BC72B92546F00371391 /* Firsat DataManager */,
+				84858BC12B924E1700371391 /* View */,
 				434F2F7F2B78193C002BDF3A /* New Firsatlar VC */,
 			);
 			path = "Firsatlar Managment";
@@ -221,6 +263,7 @@
 				4316928A2B7684C600174748 /* Managment Class - Singelton */,
 				4378F9EC2B752D4F008B3419 /* Managment Views */,
 				4378F9EB2B752D35008B3419 /* Delegete */,
+				84858BD32B92614000371391 /* UIView+Extensions.swift */,
 			);
 			path = justkibrisManagement;
 			sourceTree = "<group>";
@@ -297,6 +340,86 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84858BA92B90B3BB00371391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84858BAA2B90B3ED00371391 /* PostsManagerVC.swift */,
+				84858BAB2B90B3ED00371391 /* PostsManagerVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84858BAE2B90BAA800371391 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84858BAF2B90D33000371391 /* PostsCell.swift */,
+				84858BB02B90D33000371391 /* PostsCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		84858BB32B90D54300371391 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				84858BB42B90D56500371391 /* PostManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		84858BB62B90E33400371391 /* Post Detail */ = {
+			isa = PBXGroup;
+			children = (
+				84858BB82B90E36600371391 /* PostDetailVC.swift */,
+				84858BB92B90E36600371391 /* PostDetailVC.xib */,
+			);
+			path = "Post Detail";
+			sourceTree = "<group>";
+		};
+		84858BBC2B90F2CA00371391 /* EditDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				84858BBD2B90F30100371391 /* SponsorEditDetailVC.swift */,
+				84858BBE2B90F30100371391 /* SponsorEditDetailVC.xib */,
+			);
+			path = EditDetailVC;
+			sourceTree = "<group>";
+		};
+		84858BC12B924E1700371391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84858BC22B924FBE00371391 /* cell */,
+				84858BC32B924FD800371391 /* FirsatlarManagmetVC.swift */,
+				84858BC42B924FD800371391 /* FirsatlarManagmetVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84858BC22B924FBE00371391 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				84858BCA2B92557000371391 /* FirsatlarCell.swift */,
+				84858BCB2B92557000371391 /* FirsatlarCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		84858BC72B92546F00371391 /* Firsat DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				84858BC82B92550000371391 /* FirsatData.swift */,
+			);
+			path = "Firsat DataManager";
+			sourceTree = "<group>";
+		};
+		84858BCE2B925AB200371391 /* Firsat Detail */ = {
+			isa = PBXGroup;
+			children = (
+				84858BCF2B925ACC00371391 /* FirsatDetailVC.swift */,
+				84858BD02B925ACC00371391 /* FirsatDetailVC.xib */,
+			);
+			path = "Firsat Detail";
 			sourceTree = "<group>";
 		};
 		84C578A62B8A825000705F65 /* PartnersManagment */ = {
@@ -411,18 +534,25 @@
 			files = (
 				4378F9E42B752CB2008B3419 /* LaunchScreen.storyboard in Resources */,
 				4378F9E12B752CB2008B3419 /* Assets.xcassets in Resources */,
+				84858BAD2B90B3ED00371391 /* PostsManagerVC.xib in Resources */,
+				84858BD22B925ACC00371391 /* FirsatDetailVC.xib in Resources */,
 				4378F9FA2B7573D2008B3419 /* GoogleService-Info.plist in Resources */,
 				431692842B76843A00174748 /* CompanyEditVC.xib in Resources */,
 				431692932B76877A00174748 /* CompanyTCell.xib in Resources */,
+				84858BCD2B92557000371391 /* FirsatlarCell.xib in Resources */,
 				4316927F2B76675700174748 /* NewCompanyAddVC.xib in Resources */,
+				84858BC62B924FD800371391 /* FirsatlarManagmetVC.xib in Resources */,
+				84858BB22B90D33000371391 /* PostsCell.xib in Resources */,
 				431692A22B76EE4500174748 /* NewSponsorAddVC.xib in Resources */,
 				4378F9F12B752D7A008B3419 /* LoginVC.xib in Resources */,
+				84858BC02B90F30100371391 /* SponsorEditDetailVC.xib in Resources */,
 				431692982B76B13900174748 /* EditDetailCompanyVC.xib in Resources */,
 				84C578AA2B8A8AE600705F65 /* PartnesControllVC.xib in Resources */,
 				4378F9F62B7537A3008B3419 /* AdminManagmentVC.xib in Resources */,
 				434F2F832B78195E002BDF3A /* NewFirsatlarVC.xib in Resources */,
 				431692A62B778DEC00174748 /* SponsorEditVC.xib in Resources */,
 				84C578AF2B8A8B7E00705F65 /* AddPartnersVC.xib in Resources */,
+				84858BBB2B90E36600371391 /* PostDetailVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,8 +563,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84858BCC2B92557000371391 /* FirsatlarCell.swift in Sources */,
+				84858BD12B925ACC00371391 /* FirsatDetailVC.swift in Sources */,
+				84858BC92B92550000371391 /* FirsatData.swift in Sources */,
 				431692972B76B13900174748 /* EditDetailCompanyVC.swift in Sources */,
+				84858BBA2B90E36600371391 /* PostDetailVC.swift in Sources */,
+				84858BB52B90D56500371391 /* PostManager.swift in Sources */,
+				84858BD42B92614000371391 /* UIView+Extensions.swift in Sources */,
 				431692A52B778DEC00174748 /* SponsorEditVC.swift in Sources */,
+				84858BAC2B90B3ED00371391 /* PostsManagerVC.swift in Sources */,
+				84858BB12B90D33000371391 /* PostsCell.swift in Sources */,
 				4316928C2B7684EA00174748 /* Company Class.swift in Sources */,
 				431692A12B76EE4500174748 /* NewSponsorAddVC.swift in Sources */,
 				431692832B76843A00174748 /* CompanyEditVC.swift in Sources */,
@@ -444,6 +582,8 @@
 				431692922B76877A00174748 /* CompanyTCell.swift in Sources */,
 				84C578AE2B8A8B7E00705F65 /* AddPartnersVC.swift in Sources */,
 				4378F9F02B752D7A008B3419 /* LoginVC.swift in Sources */,
+				84858BC52B924FD800371391 /* FirsatlarManagmetVC.swift in Sources */,
+				84858BBF2B90F30100371391 /* SponsorEditDetailVC.swift in Sources */,
 				4378F9F52B7537A3008B3419 /* AdminManagmentVC.swift in Sources */,
 				434F2F822B78195E002BDF3A /* NewFirsatlarVC.swift in Sources */,
 				4316927E2B76675700174748 /* NewCompanyAddVC.swift in Sources */,
@@ -598,6 +738,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,6 +771,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

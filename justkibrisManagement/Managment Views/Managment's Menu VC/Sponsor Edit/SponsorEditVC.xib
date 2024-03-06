@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -22,18 +23,64 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-2W-Hrl">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yM2-mS-qlG">
+                                    <rect key="frame" x="0.0" y="104" width="375" height="713"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etkinlikler Bulunamadı. Lütfen Bekleyiniz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yWh-SL-OYd">
+                                        <rect key="frame" x="0.0" y="1607.0000000000002" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </tableView>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="q7q-WM-M7C">
+                                    <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                    <color key="color" red="0.4463018775" green="0.27315044399999999" blue="0.90616661310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </activityIndicatorView>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kvx-VX-8gG">
+                                    <rect key="frame" x="16" y="10" width="343" height="47"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sponsor Yönetim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGY-XN-GDt">
+                                            <rect key="frame" x="8" y="13" width="289" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow.down.right.and.arrow.up.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qLP-yi-BI0">
+                                            <rect key="frame" x="295" y="1" width="48" height="45.333333333333329"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DDp-kM-Ypn">
+                                    <rect key="frame" x="8" y="65" width="359" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Yayında Olan"/>
+                                        <segment title="Yayında Olmayan"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="1500" id="HVy-IV-jaZ"/>
+                                <constraint firstItem="q7q-WM-M7C" firstAttribute="centerX" secondItem="hwN-2W-Hrl" secondAttribute="centerX" id="PDd-TL-7fs"/>
+                                <constraint firstAttribute="height" constant="812" id="eGe-gg-a8p"/>
+                                <constraint firstItem="q7q-WM-M7C" firstAttribute="centerY" secondItem="hwN-2W-Hrl" secondAttribute="centerY" id="veT-lP-zYo"/>
                             </constraints>
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="hwN-2W-Hrl" firstAttribute="leading" secondItem="dfA-7X-bAr" secondAttribute="leading" id="Dm0-wg-ifK"/>
-                        <constraint firstItem="hwN-2W-Hrl" firstAttribute="top" secondItem="dfA-7X-bAr" secondAttribute="top" id="HXc-c6-xwI"/>
-                        <constraint firstAttribute="bottom" secondItem="hwN-2W-Hrl" secondAttribute="bottom" id="IKt-Q0-h6S"/>
-                        <constraint firstAttribute="trailing" secondItem="hwN-2W-Hrl" secondAttribute="trailing" id="cny-lK-RJq"/>
+                        <constraint firstAttribute="bottom" secondItem="hwN-2W-Hrl" secondAttribute="bottom" id="J6m-h6-6TC"/>
+                        <constraint firstAttribute="trailing" secondItem="hwN-2W-Hrl" secondAttribute="trailing" id="TWP-6k-Iy2"/>
+                        <constraint firstItem="hwN-2W-Hrl" firstAttribute="leading" secondItem="dfA-7X-bAr" secondAttribute="leading" id="dUx-qk-u3l"/>
+                        <constraint firstItem="hwN-2W-Hrl" firstAttribute="top" secondItem="dfA-7X-bAr" secondAttribute="top" id="hhj-6k-qNU"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -41,17 +88,25 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="dfA-7X-bAr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cnf-s3-ME9"/>
+                <constraint firstItem="dfA-7X-bAr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GfH-r2-hmx"/>
+                <constraint firstItem="dfA-7X-bAr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ibv-yJ-SUb"/>
                 <constraint firstAttribute="bottom" secondItem="dfA-7X-bAr" secondAttribute="bottom" id="Lkx-AU-NRp"/>
-                <constraint firstItem="hwN-2W-Hrl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="PWg-g8-r1e"/>
+                <constraint firstAttribute="bottom" secondItem="dfA-7X-bAr" secondAttribute="bottom" id="N0x-0Q-dpo"/>
+                <constraint firstItem="dfA-7X-bAr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wmt-pO-J5R"/>
                 <constraint firstItem="dfA-7X-bAr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="c75-7R-fTS"/>
                 <constraint firstItem="dfA-7X-bAr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k7g-Th-yRB"/>
+                <constraint firstItem="hwN-2W-Hrl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="uo9-56-lAJ"/>
             </constraints>
-            <point key="canvasLocation" x="-25.190839694656489" y="19.718309859154932"/>
+            <point key="canvasLocation" x="-26.399999999999999" y="19.211822660098523"/>
         </view>
     </objects>
     <resources>
+        <image name="arrow.down.right.and.arrow.up.left" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -45,7 +45,7 @@ class NewCompanyAddVC: UIViewController, PHPickerViewControllerDelegate, UIImage
 
 
     //Etkinlik Kategorileri!
-    let etkinlikKategorileriData = ["Night Club", "Bar", "Konser", "Party","Meyhane", "Cafe", "Restoran", "Esnaf-Gündelik"]
+    let etkinlikKategorileriData = ["Night Club", "Bar", "Konser", "Party","Meyhane", "Cafe", "Restoran", "Esnaf-Gündelik", "Yurt"]
     let reservasyonOnData = ["Açık", "Kapalı"]
     
     
@@ -249,7 +249,7 @@ extension NewCompanyAddVC{
     func setupShowAlert(title:String, message:String, buttonHeader:String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: buttonHeader, style: .default) { _ in
-            self.dismiss(animated: true)
+            //self.dismiss(animated: true)
         }
         alert.addAction(okButton)
         self.present(alert, animated: true)
